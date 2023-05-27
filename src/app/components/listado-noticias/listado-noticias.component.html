@@ -1,0 +1,15 @@
+<div class="row row-cols-1 row-cols-md-2 g-4 mt-5">
+
+    <div  *ngFor= "let noticia of listNoticias"class="col">
+      <div class="card">
+       <!--LA IMÁGEN ESTÁ COMO NULL  <img [src] ="noticia.urlToImage" class="card-img-top" alt="...">   -->
+        <div class="card-body">
+         <span class="badge- bg-primary mb-1">{{ noticia.author }} </span> 
+           <h5 class="card-title">{{noticia.title}}</h5>
+           <a [href]= "noticia.url" target="_blank" class="btn btn-primary btn-block">Ver Noticia</a>
+           
+          
+        </div>
+      </div>
+    </div>  
+</div>
